@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "run": "tsx main.tracing.ts"
+    "start": "tsx main.tracing.ts"
   },
   "keywords": [],
   "author": "",

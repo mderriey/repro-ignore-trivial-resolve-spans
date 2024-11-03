@@ -25,3 +25,31 @@ The example is set up as an Express.js web application using Apollo Server.
    ```
    
 4. Observe in the console a span named `graphql.resolve me.name`.
+
+   ```console
+   {
+     resource: {
+     instrumentationScope: {
+       name: '@opentelemetry/instrumentation-graphql',
+       version: '0.44.0',
+       schemaUrl: undefined
+     },
+     traceId: '141e775d40e7a5b4f0d9d1484da835fb',
+     parentId: '817fca783974fbeb',
+     traceState: undefined,
+     name: 'graphql.resolve me.name',
+     id: 'fd4c468acb830e1f',
+     kind: 0,
+     timestamp: 1730669920179000,
+     duration: 133.9,
+     attributes: {
+       'graphql.field.name': 'name',
+       'graphql.field.path': 'me.name',
+       'graphql.field.type': 'String!',
+       'graphql.source': 'name'
+     },
+     status: { code: 0 },
+     events: [],
+     links: []
+   }
+   ```

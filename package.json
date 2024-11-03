@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "run": "tsx main.ts"
+    "run": "tsx main.tracing.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,9 @@
     "@apollo/server": "^4.11.2",
     "@graphql-tools/load-files": "^7.0.0",
     "@graphql-tools/schema": "^10.0.7",
+    "@opentelemetry/instrumentation-graphql": "^0.44.0",
+    "@opentelemetry/sdk-node": "^0.54.0",
+    "@opentelemetry/sdk-trace-base": "^1.27.0",
     "express": "^4.21.1",
     "graphql": "^16.9.0"
   },

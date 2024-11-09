@@ -4,6 +4,13 @@ This repository is a minimal reproducible example of a case where the GraphQL in
 
 The example is set up as an Express.js web application using Apollo Server.
 
+> [!NOTE]
+> The problem was found to lie in Apollo Server which wraps fields resolvers when it finds a plugin that defines the `willResolveField` hook.
+> Apollo's internal cache control plugin does this.
+> Disabling this plugin fixed the problem, and no resolve spans for `me.name` were emitted anymore.
+>
+> See <https://github.com/open-telemetry/opentelemetry-js-contrib/issues/2514#issuecomment-2466109964>.
+
 ## Steps
 
 1. Install npm packages: `npm install`.

@@ -16,7 +16,7 @@
     "@opentelemetry/instrumentation-graphql": "^0.44.0",
     "@opentelemetry/sdk-node": "^0.54.0",
     "@opentelemetry/sdk-trace-base": "^1.27.0",
-    "express": "^4.21.1",
+    "express": "^4.21.2",
     "graphql": "^16.9.0"
   },
   "devDependencies": {
